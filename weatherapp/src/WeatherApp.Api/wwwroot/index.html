@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Weather</title>
+    <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Get Weather</h1>
+
+        <div class="selectors">
+            <div>
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="">loading...</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">City</label>
+                <select id="city" disabled>
+                    <option value="">Select a country</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="message"></p>
+
+        <table id="result" class="hidden">
+            <tbody>
+                <tr><th>Location</th><td id="location"></td></tr>
+                <tr><th>Time (UTC)</th><td id="time"></td></tr>
+                <tr><th>Wind</th><td id="wind"></td></tr>
+                <tr><th>Visibility</th><td id="visibility"></td></tr>
+                <tr><th>Sky conditions</th><td id="sky"></td></tr>
+                <tr><th>Temperature</th><td id="temperature"></td></tr>
+                <tr><th>Dew point</th><td id="dewpoint"></td></tr>
+                <tr><th>Relative humidity</th><td id="humidity"></td></tr>
+                <tr><th>Pressure</th><td id="pressure"></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="site.js"></script>
+</body>
+</html>
