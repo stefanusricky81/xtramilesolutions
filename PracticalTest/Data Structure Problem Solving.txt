@@ -1,0 +1,11 @@
+1. Which data structure and matching algorithm would you choose for this 
+autocomplete use-case, and why?  
+
+Since this is autocomplete, the search is prefix-based and we only need the top 10 results. 
+So I'd go with a sorted string array held in application memory 
+2. What is the expected performance of your solution, both in terms of algorithmic time 
+complexity and real-world query latency? 
+Binary search is O, so O per search.  
+3. What specific tools or technologies would you leverage to implement and optimize 
+this design? 
+using sql server
